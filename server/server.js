@@ -1,6 +1,8 @@
 const express = require("express")
 const axios = require("axios")
 const path = require("path")
+//link controller
+const controller = require('./controller.js');
 
 //telling server to load dotenv
 require('dotenv').config()
@@ -11,10 +13,9 @@ const app = express()
 
 app.use(express.static(path.join(__dirname)));
 app.use("/styles.css", express.static(__dirname + "/styles.css"));
-app.use("/main.js", express.static(__dirname + "/index.js"));
+app.use("/script.js", express.static(__dirname + "/script.js"));
 
-//link controller
-const controller = require('./controller.js');
+
 
 //responding to paths with respective file
 app.get('/', (req, res) => { 
@@ -34,7 +35,7 @@ app.get('/styles.css', (req, res) => {
 //     })
 
 app.get('/api/articles', controller.getArticles); 
-app.get('api/currentjobs', controller.getCurrentJobs);
+app.get('/api/currentjobs', controller.getCurrentJobs);
 // app.post('/api/houses', controller.createHouse);
 // app.put('/api/houses/:id', controller.updateHouse);
 // app.delete('/api/houses/:id', controller.deleteHouse);

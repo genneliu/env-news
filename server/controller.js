@@ -6,6 +6,8 @@ const { default: axios } = require("axios");
 
 //api key hidden for small safety measure
 const newsAPIKey = process.env.NEWS_API_KEY;
+
+//require db.json
 const jobs = require('./db.json');
 
 //const for safety
@@ -29,11 +31,19 @@ module.exports = {
         });
     },
     getCurrentJobs: (req, res) => {
-        res.status(200).send(jobs);
-        if (res == null || res == 'undefined') {
-            res.sendStatus(400);
+        res.status(200).send(jobs)
     }
-}
+    // getCurrentJobs: (req, response) => {
+    //     axios.get(jobs).then(function (res) {
+    //         let jobsList = jobs.
+    //         res.status(200).send(jobs);
+    //         console.log(jobs)
+    //         if (res == null || res == 'undefined') {
+    //             response.sendStatus(400);
+    //         }
+    //     }
+        // )}
+};
 
 
 // https://newsapi.org/docs/endpoints/everything

@@ -1,20 +1,58 @@
 [
     {
       "id": 1,
-      "jobTitle": "",
-      "subfield": "",
-      "URL" : ""
+      "jobTitle": "Staff Climate Change Advisory Consultant (Entry Level)",
+      "subfield": "Climate Finance",
+      "location": "Washington DC",
+      "URL" : "https://www.linkedin.com/jobs/view/staff-climate-change-advisory-consultant-entry-level-at-erm-environmental-resources-management-2735653860/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
     },
     {
       "id": 2,
-      "jobTitle": "",
-      "subfield": "",
-      "URL" : ""
+      "jobTitle": "Air Quality & Climate Change Specialist",
+      "subfield": "Climate Science",
+      "location": "Irvine, CA",
+      "URL" : "https://www.icf.com/careers/jobs/air-quality-climate-change-specialist-california-r2102766?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
     },
     {
       "id": 3,
-      "jobTitle": "",
-      "subfield": "",
-      "URL" : ""
-    }
+      "jobTitle": "Assistant Professor in Energy, Sustainability, and Climate",
+      "subfield": "Climate Education",
+      "location": "Boston, MA",
+      "URL" : "https://cra.org/job/boston-university-assistant-professor-in-energy-sustainability-and-climate/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+    },
+    {
+      "id": 4,
+      "jobTitle": "Postdoctoral Scientist – NASA Goddard Institute for Space",
+      "subfield": "Oceanography Research",
+      "location": "New York, NY",
+      "URL" : "https://www.jobilize.com/amp/job/postdoctoral-scientist-nasa-goddard-institute-for-space-studies-new?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+      },
+    {
+      "id": 5,
+      "jobTitle": "Climate Accounts Budget Administrator​/WMS Band 1",
+      "subfield": "Air Quality Research",
+      "location": "Olympia, WA",
+      "URL" : "https://www.learn4good.com/jobs/olympia/washington/management_and_managerial/618956781/e/"
+      },
+    {
+      "id": 6,
+      "jobTitle": "Climate Change Research Scientist",
+      "subfield": "Climatology Research",
+      "location": "Corvallis, OR",
+      "URL" : "https://careers-orau.icims.com/jobs/1462/climate-change-research-support/job?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+    },
+    {
+      "id": 7,
+      "jobTitle": "CDA - Agriculture Drought and Climate Specialist",
+      "subfield": "Agriculture and Food Supply",
+      "location": "Broomfield, CO",
+      "URL" : "https://www.governmentjobs.com/careers/colorado/jobs/3242672/cda-agriculture-drought-and-climate-specialist?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+    },
+    {
+        "id": 8,
+        "jobTitle": "Environmental Scientist/Engineer I",
+        "subfield": "Environmental Engineering",
+        "location": "Anchorage, AK",
+        "URL" : "https://aecom.jobs/anchorage-ak/environmental-scientistengineer-i/be06f69ee6504a54bca75104cfc308f0/job/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+      }
   ]

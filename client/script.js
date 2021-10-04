@@ -1,7 +1,8 @@
-let articleDiv = document.querySelector("div");
+let articleDiv = document.getElementById("articles");
+let jobsDiv = document.getElementById("jobs")
 
 window.onload =function() {
-    axios.get("/api/articles")
+    axios.get("http://localhost:4400/api/articles")
     .then((res) => {
       for (let i =0; i <= 9; i++) {
         let {source, author, title, description, url, publishedAt} = res.data[i];
@@ -49,8 +50,30 @@ window.onload =function() {
         // articleTitle.appendChild(articleImage);
     };
   })
+  //invoke jobsBoard on load
+  jobsBoard();
+
 };
 
+// load simple job board
+let jobsBoard = function() {
+  axios.get("http://localhost:4400/api/currentjobs")
+  .then((res) => {
+    for (let i =0; i < res.data.length; i++) {
+      let {id, jobTitle, subfield, location, URL} = res.data[i];
+        let jobData = {
+          id: id,
+          title: jobTitle,
+          category: subfield,
+          location: location,
+          URL: URL
+        }
+      let jobName = document.createElement("ul");
+      jobName.textContent = jobData.title;
+      jobsDiv.appendChild(jobName);
+    }
+  })
+} 
 
 
 //current date function
