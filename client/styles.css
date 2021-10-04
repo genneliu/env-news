@@ -53,6 +53,7 @@ h1 {
 }
 
 #articles ul {
+    text-transform: capitalize;
     background-color: rgb(235, 230, 228);
     border: 2px solid blue;
 }
@@ -60,6 +61,7 @@ h1 {
 
 #articles li {
     list-style-type: none;
+    
 }
 
 
@@ -76,11 +78,13 @@ h1 {
 }
 
 #jobs ul {
+    text-transform: capitalize;
     background-color: rgb(235, 230, 228);
     border: 2px solid blue;
 }
 
 #jobs li {
+    text-transform: capitalize;
     list-style-type: none;
 }
 
