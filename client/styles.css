@@ -2,6 +2,7 @@ body {
     color: blue;
     background-image: url("/assets/forest-day.jpg");
     font-family: 'Roboto', sans-serif;
+    text-align: center;
 }
 
 .dark-mode {
@@ -11,45 +12,39 @@ body {
 
 /* headers -----------------------*/
 
+header {
+    font-family: 'Inter', sans-serif;
+    color: green;
+    background-color: white;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
 h1 {
-    font-family: 'Inter', sans-serif;
-    color: green;
-    background-color: white;
+    font-size: 2.5rem;
 }
 
-h2 {
-    font-family: 'Inter', sans-serif;
-    color: green;
-    background-color: white;
-}
 
-h3 {
-    font-family: 'Inter', sans-serif;
-    color: green;
-    background-color: white;
-}
 
-.dark-mode h1 {
+.dark-mode header {
     font-family: 'Inter', sans-serif;
     color: white;
     background-color: black;
 }
 
-.dark-mode h2 {
-    font-family: 'Inter', sans-serif;
-    color: white;
-    background-color: black;
-}
 
-.dark-mode h3 {
-    font-family: 'Inter', sans-serif;
-    color: white;
-    background-color: black;
-}
 
+/* toggle button --------------------------*/
 
 #toggle-mode {
+    font-family: 'Inter', sans-serif;
+    background-color: green;
+}
 
+.dark-mode #toggle-mode {
+    
 }
 
 /* articles div --------------------------*/
@@ -75,19 +70,69 @@ h3 {
 
 
 
-/* jobs board  */
+/* jobs board -------------------------------- */
 #jobs {
 
 }
 
 #jobs ul {
-
+    background-color: rgb(235, 230, 228);
+    border: 2px solid blue;
 }
 
 #jobs li {
-
+    list-style-type: none;
 }
 
 #jobs a {
     border: 1px solid black;
+}
+
+
+.dark-mode #jobs ul {
+    border: 2px solid white;
+    background-color: black;
+}
+
+.dark-mode #jobs a {
+    border: 1px solid white;
+}
+
+/* view jobs button --------------------------*/
+#get-jobs {
+
+}
+
+#get-jobs:hover {
+
+}
+
+.dark-mode #get-jobs {
+    
+}
+
+.dark-mode #get-jobs:hover {
+    
+}
+
+/* form and button --------------------------*/
+
+form {
+
+}
+
+#post-job {
+
+}
+
+#post-job:hover {
+
+}
+
+.dark-mode #post-job {
+
+}
+
+.dark-mode #post-job:hover {
+
 }

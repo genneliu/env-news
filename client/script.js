@@ -42,14 +42,12 @@ window.onload =function() {
         articleTitle.appendChild(articleDesc);
 
         //add URL
-        let articleURL = document.createElement("li");
-        articleURL.textContent = articleInfo.url;
-        articleTitle.appendChild(articleURL);
-
-        //add image later?
-        // let articleImage = document.createElement("li");
-        // articleImage.source = articleInfo.urlToImage;
-        // articleTitle.appendChild(articleImage);
+        let articleUrlLink = document.createElement('a');
+        let link = document.createTextNode("Click To View Article")
+        articleUrlLink.appendChild(link)
+        articleUrlLink.setAttribute('href', articleInfo.url)
+        articleUrlLink.setAttribute('target', '_blank')
+        articleTitle.appendChild(articleUrlLink);
     };
   })
   //invoke jobsBoard on load
