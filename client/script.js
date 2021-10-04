@@ -50,3 +50,12 @@ window.onload =function() {
     };
   })
 };
+
+
+
+//current date function
+n =  new Date();
+y = n.getFullYear();
+m = n.getMonth() + 1;
+d = n.getDate();
+document.getElementById("date").innerHTML = "Today's Date Is: " + m + "/" + d + "/" + y;
