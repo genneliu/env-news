@@ -1,7 +1,7 @@
 let articleDiv = document.querySelector("div");
 
 window.onload =function() {
-    axios.get("http://localhost:4400/api/articles")
+    axios.get("/api/articles")
     .then((res) => {
       for (let i =0; i <= 9; i++) {
         let {source, author, title, description, url, publishedAt} = res.data[i];
