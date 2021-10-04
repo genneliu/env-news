@@ -2,6 +2,9 @@ const express = require("express")
 const axios = require("axios")
 const path = require("path")
 
+//telling server to load dotenv
+require('dotenv').config()
+
 //create server object
 const app = express()
 
