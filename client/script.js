@@ -1,3 +1,4 @@
+
 let articleDiv = document.getElementById("articles");
 let jobsDiv = document.getElementById("jobs")
 
@@ -71,6 +72,23 @@ let jobsBoard = function() {
       let jobName = document.createElement("ul");
       jobName.textContent = jobData.title;
       jobsDiv.appendChild(jobName);
+
+      let jobCategory = document.createElement("li");
+      jobCategory.textContent = "Field/Category: " + jobData.category;
+      jobName.appendChild(jobCategory);
+
+      let jobLocation = document.createElement("li");
+      jobLocation.textContent = "Location: " + jobData.location;
+      jobName.appendChild(jobLocation);
+
+      // let applyButton = document.createElement("button");
+      let applyLink = document.createElement("a")
+      let link = document.createTextNode("Click to Apply")
+      applyLink.appendChild(link);
+      applyLink.title = "Click to Apply"
+      applyLink.setAttribute('href', jobData.URL)
+      applyLink.setAttribute('target', "_blank")
+      jobName.appendChild(applyLink);
     }
   })
 } 
@@ -81,4 +99,4 @@ n =  new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
 d = n.getDate();
-document.getElementById("date").innerHTML = "Today's Date Is: " + m + "/" + d + "/" + y;
+document.getElementById("date").innerHTML = "Today's Date is: " + m + "/" + d + "/" + y;
