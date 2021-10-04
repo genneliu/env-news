@@ -5,15 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
     <!-- add defer bc js loaded before html -->
+    <script src="script.js" defer></script>
+    <!-- fonts from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Climate News</title>
 </head>
 
 
 
-<body class="light">
+<body>
 <h1> Climate News and Job Board </h1>
 <h2>The latest Climate Related News and Jobs</h2> 
 <h3 id="date"> </h3>
@@ -21,6 +25,8 @@
 <button id="toggle-mode" onclick="toggleMode()"> Toggle Dark/Light Mode </button>
 
     <div id="articles"> </div>
+
+    <button id="get-jobs"> Click to See Climate Jobs </button>
     <div id="jobs"> </div>
 
 

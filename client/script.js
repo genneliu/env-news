@@ -3,7 +3,7 @@
 window.onload =function() {
   let articleDiv = document.getElementById("articles");
   let postJobButton = document.getElementById("post-job")
-
+  let displayJobs = document.getElementById("get-jobs")
     axios.get("http://localhost:4400/api/articles")
     .then((res) => {
       for (let i =0; i <= 9; i++) {
@@ -53,7 +53,7 @@ window.onload =function() {
     };
   })
   //invoke jobsBoard on load
-  jobsBoard();
+  displayJobs.addEventListener("click", jobsBoard);
   postJobButton.addEventListener("click", addJobPosting)
 };
 
@@ -135,6 +135,6 @@ document.getElementById("date").innerHTML = "Today's Date is: " + m + "/" + d + 
 
 //dark mode
 function toggleMode() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
+  let background = document.body;
+  background.classList.toggle("dark-mode");
 }

@@ -1,6 +1,7 @@
-.light {
-    color: white;
+body {
+    color: blue;
     background-image: url("/assets/forest-day.jpg");
+    font-family: 'Roboto', sans-serif;
 }
 
 .dark-mode {
@@ -8,18 +9,70 @@
     color: white;
   }
 
-/* articles div */
+/* headers -----------------------*/
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    color: green;
+    background-color: white;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    color: green;
+    background-color: white;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: green;
+    background-color: white;
+}
+
+.dark-mode h1 {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.dark-mode h2 {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+.dark-mode h3 {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+
+#toggle-mode {
+
+}
+
+/* articles div --------------------------*/
 #articles {
+
 }
 
 #articles ul {
     background-color: rgb(235, 230, 228);
-    border: 2px solid red;
+    border: 2px solid blue;
 }
+
 
 #articles li {
-
+    list-style-type: none;
 }
+
+
+.dark-mode #articles ul {
+    border: 2px solid white;
+    background-color: black;
+}
+
 
 
 /* jobs board  */
