@@ -1,9 +1,11 @@
 const { default: axios } = require("axios");
 
-//api key hidden for safety measure
-export default NewsApiWrapper ({
-    newsApiKey: process.env.NEWS_API_KEY;
-})(newsContainer)
+// export default NewsApiWrapper ({
+//     newsApiKey: process.env.NEWS_API_KEY;
+// })(newsContainer)
+
+//api key hidden for small safety measure
+const newsAPIKey = process.env.NEWS_API_KEY;
 
 //const for safety
 const query = "climate";
