@@ -6,6 +6,7 @@ const { default: axios } = require("axios");
 
 //api key hidden for small safety measure
 const newsAPIKey = process.env.NEWS_API_KEY;
+const jobs = require('./db.json');
 
 //const for safety
 const query = "climate";
@@ -27,6 +28,11 @@ module.exports = {
             };
         });
     },
+    getCurrentJobs: (req, res) => {
+        res.status(200).send(jobs);
+        if (res == null || res == 'undefined') {
+            res.sendStatus(400);
+    }
 }
 
 

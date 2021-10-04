@@ -34,6 +34,7 @@ app.get('/styles.css', (req, res) => {
 //     })
 
 app.get('/api/articles', controller.getArticles); 
+app.get('api/currentjobs', controller.getCurrentJobs);
 // app.post('/api/houses', controller.createHouse);
 // app.put('/api/houses/:id', controller.updateHouse);
 // app.delete('/api/houses/:id', controller.deleteHouse);
