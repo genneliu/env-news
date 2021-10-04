@@ -1,6 +1,7 @@
 const express = require("express")
 const axios = require("axios")
 const path = require("path")
+const cors = require('cors');
 //link controller
 const controller = require('./controller.js');
 
@@ -11,31 +12,15 @@ require('dotenv').config()
 const app = express()
 
 
-app.use(express.static(path.join(__dirname)));
-app.use("/styles.css", express.static(__dirname + "/styles.css"));
-app.use("/script.js", express.static(__dirname + "/script.js"));
+app.use(express.static(path.join(__dirname, "../client")));
 
 
-
-//responding to paths with respective file
-app.get('/', (req, res) => { 
-    res.sendFile(path.join(__dirname, "../client/index.html"))
-})
-
-app.get('/script.js', (req, res) => {
-res.sendFile(path.join(__dirname, '../client/script.js'))
-})
-
-app.get('/styles.css', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/styles.css'))
-    })
-
-// app.get('/script.js', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/script.js'))
-//     })
+app.use(express.json());
+app.use(cors());
 
 app.get('/api/articles', controller.getArticles); 
 app.get('/api/currentjobs', controller.getCurrentJobs);
+app.post('/api/addjob', controller.createJob);
 // app.post('/api/houses', controller.createHouse);
 // app.put('/api/houses/:id', controller.updateHouse);
 // app.delete('/api/houses/:id', controller.deleteHouse);

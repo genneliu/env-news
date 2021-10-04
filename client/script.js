@@ -1,8 +1,9 @@
 
-let articleDiv = document.getElementById("articles");
-let jobsDiv = document.getElementById("jobs")
 
 window.onload =function() {
+  let articleDiv = document.getElementById("articles");
+  let postJobButton = document.getElementById("post-job")
+
     axios.get("http://localhost:4400/api/articles")
     .then((res) => {
       for (let i =0; i <= 9; i++) {
@@ -53,11 +54,12 @@ window.onload =function() {
   })
   //invoke jobsBoard on load
   jobsBoard();
-
+  postJobButton.addEventListener("click", addJobPosting)
 };
 
 // load simple job board
 let jobsBoard = function() {
+  let jobsDiv = document.getElementById("jobs")
   axios.get("http://localhost:4400/api/currentjobs")
   .then((res) => {
     for (let i =0; i < res.data.length; i++) {
@@ -91,7 +93,36 @@ let jobsBoard = function() {
       jobName.appendChild(applyLink);
     }
   })
-} 
+};
+
+
+//add job
+let addJobPosting = function(body) {
+  let title = document.querySelector('#title').value
+  let field = document.querySelector('#category').value
+  let location = document.querySelector('#location').value
+  let URL = document.querySelector('#URL').value
+
+  let bodyObj = {
+    title: title,
+    category: field,
+    location: location,
+    URL: URL
+  }
+  axios.post("http://localhost:4400/api/addJob", bodyObj)
+  .then((res) => {
+
+
+
+
+  //   createJob(bodyObj)
+
+  //   title.value = ''
+  //   field.value = ''
+  //   location.value = ''
+  //   URL.value = ''
+  })
+};
 
 
 //current date function
@@ -100,3 +131,10 @@ y = n.getFullYear();
 m = n.getMonth() + 1;
 d = n.getDate();
 document.getElementById("date").innerHTML = "Today's Date is: " + m + "/" + d + "/" + y;
+
+
+//dark mode
+function toggleMode() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}

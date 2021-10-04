@@ -1,7 +1,14 @@
-body {
-    color: brown;
+.light {
+    color: white;
+    background-image: url("/assets/forest-day.jpg");
 }
 
+.dark-mode {
+    background-image: url("/assets/forest-night.jpeg");
+    color: white;
+  }
+
+/* articles div */
 #articles {
 }
 
@@ -14,10 +21,20 @@ body {
 
 }
 
+
+/* jobs board  */
+#jobs {
+
+}
+
 #jobs ul {
 
 }
 
 #jobs li {
-    
+
+}
+
+#jobs a {
+    border: 1px solid black;
 }

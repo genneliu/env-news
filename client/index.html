@@ -10,14 +10,41 @@
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Climate News</title>
 </head>
+
+
+
+<body class="light">
 <h1> Climate News and Job Board </h1>
 <h2>The latest Climate Related News and Jobs</h2> 
 <h3 id="date"> </h3>
 
+<button id="toggle-mode" onclick="toggleMode()"> Toggle Dark/Light Mode </button>
 
-<body>
     <div id="articles"> </div>
     <div id="jobs"> </div>
+
+
+
+    <form>
+        <input 
+            type='text'
+            id="title"
+            placeholder="Job Position Title"/>
+        <input 
+            type='text'
+            id="category"
+            placeholder='Job Position Field'/>
+        <input 
+            type='text'
+            id="location"
+            placeholder='Job Location'/>
+        <input 
+            type='text'
+            id="URL"
+            placeholder='Link to Application'/>
+        <button id="post-job">Post a New Job</button>
+    </form>
+
 
 </body>
 

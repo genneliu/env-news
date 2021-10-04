@@ -1,5 +1,6 @@
 const { default: axios } = require("axios");
 
+globalId = 9;
 // export default NewsApiWrapper ({
 //     newsApiKey: process.env.NEWS_API_KEY;
 // })(newsContainer)
@@ -8,7 +9,7 @@ const { default: axios } = require("axios");
 const newsAPIKey = process.env.NEWS_API_KEY;
 
 //require db.json
-const jobs = require('./db.json');
+let jobs = require('./db.json');
 
 //const for safety
 const query = "climate";
@@ -32,17 +33,26 @@ module.exports = {
     },
     getCurrentJobs: (req, res) => {
         res.status(200).send(jobs)
+    },
+    createJob: (req, res) => {
+        console.log(req.body)
+        const { title, category, location, URL} = req.body;
+        let newJob = {
+            id: globalId,
+            jobTitle: title,
+            subfield: category,
+            location: location,
+            URL: URL
+        }
+        if (!title || !category || !location || !URL) {
+            return res.status(400).send('MISSING A FIELD')
+        } else {
+            jobs.push(newJob);
+            console.log(jobs)
+            globalId++;
+            return res.status(200).send(newJob);
+        }
     }
-    // getCurrentJobs: (req, response) => {
-    //     axios.get(jobs).then(function (res) {
-    //         let jobsList = jobs.
-    //         res.status(200).send(jobs);
-    //         console.log(jobs)
-    //         if (res == null || res == 'undefined') {
-    //             response.sendStatus(400);
-    //         }
-    //     }
-        // )}
 };
 
 
