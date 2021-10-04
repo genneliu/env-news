@@ -4,8 +4,13 @@ const path = require("path")
 
 //create server object
 const app = express()
-app.use(express.static("client"));
 
+
+app.use(express.static(path.join(__dirname)));
+app.use("/styles.css", express.static(__dirname + "/styles.css"));
+app.use("/main.js", express.static(__dirname + "/index.js"));
+
+//link controller
 const controller = require('./controller.js');
 
 //responding to paths with respective file
