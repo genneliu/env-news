@@ -1,7 +1,7 @@
 {
   "name": "env-news",
   "version": "1.0.0",
-  "description": "most up-to-date climate news",
+  "description": "",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
@@ -10,13 +10,13 @@
   "keywords": [],
   "author": "Genne Liu",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "axios": "^0.21.4",
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "postinstall": "^0.7.3"
   },
   "engines": {
     "node": "16.8.0"
-  }  
+  }
 }

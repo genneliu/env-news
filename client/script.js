@@ -1,8 +1,6 @@
 let articleDiv = document.querySelector("div");
 
-window.addEventListener("load", loadArticles);
-
-function loadArticles () {
+window.onload =function() {
     axios.get("http://localhost:4400/api/articles")
     .then((res) => {
       for (let i =0; i <= 9; i++) {
