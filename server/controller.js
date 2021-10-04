@@ -16,7 +16,7 @@ module.exports = {
         .then(function (res) {
             let articles = res.data.articles
             //want to see what response looks like
-            console.log(articles)
+            // console.log(articles)
             //send response back
             response.status(200).send(articles);
             //have frontend create loop and sort data to view

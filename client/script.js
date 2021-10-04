@@ -11,7 +11,7 @@ window.onload =function() {
           title: title,
           description: description,
           url: url,
-          date: publishedAt
+          date: publishedAt,
         }
         // add title
         let articleTitle = document.createElement("ul");
@@ -20,17 +20,17 @@ window.onload =function() {
 
         // add source
         let articleSource = document.createElement("li");
-        articleSource.textContent = articleInfo.source;
+        articleSource.textContent = "Source: " + articleInfo.source;
         articleTitle.appendChild(articleSource);
 
         // add author
         let articleAuthor = document.createElement("li");
-        articleAuthor.textContent = articleInfo.author;
+        articleAuthor.textContent = "Author: " + articleInfo.author;
         articleTitle.appendChild(articleAuthor);
 
         //add date
         let articleDate = document.createElement("li");
-        articleDate.textContent = articleInfo.date;
+        articleDate.textContent = "Date: " + articleInfo.date;
         articleTitle.appendChild(articleDate);
 
         //add description
@@ -44,6 +44,9 @@ window.onload =function() {
         articleTitle.appendChild(articleURL);
 
         //add image later?
+        // let articleImage = document.createElement("li");
+        // articleImage.source = articleInfo.urlToImage;
+        // articleTitle.appendChild(articleImage);
     };
   })
 };

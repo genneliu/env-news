@@ -2,11 +2,14 @@ body {
     color: brown;
 }
 
+#articles {
+}
 
 ul {
-
+    background-color: rgb(235, 230, 228);
+    border: 2px solid red;
 }
 
 li {
-    
+
 }
