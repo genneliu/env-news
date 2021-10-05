@@ -6,7 +6,7 @@ Learn More About the Developer: www.linkedin.com/in/genneliu/
 
  *Climate News & Job Board* is a web application that draws Climate news from News API and displays Climate related job postings. Visitors are able to go directly to the articles, post new jobs to the job board, and apply to jobs via links. 
 
- As someone who worked in the environmental field, this app was inspired by a recent conversation I had with a friend who still works in the field; we often discuss how difficult it is to find environmental news and jobs compared to other fields. 
+ As someone who worked in the environmental field, this app was inspired by a recent conversation I had with a friend; we often discuss how difficult it is to find environmental news and jobs compared to other fields. 
 
  ### Project Background
  This is my final project for the DevMountain Foundations course. Special thanks to my instructors Stuart, DJ, and Adam. 
