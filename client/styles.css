@@ -1,5 +1,19 @@
+/*
+light mode photo colors
+A9A48A tan
+59A11F light green
+246F12 dark green
+
+
+dark mode photo colors
+#01131f darkest blue
+04283E navy blue
+0083B8 lighter blue
+606C7A moon grey
+ */
+
 body {
-    color: blue;
+    color: #246F12;
     background-image: url("/assets/forest-day.jpg");
     font-family: 'Roboto', sans-serif;
     text-align: center;
@@ -7,7 +21,7 @@ body {
 
 .dark-mode {
     background-image: url("/assets/forest-night.jpeg");
-    color: white;
+    color: white !important;
   }
 
 /* headers -----------------------*/
@@ -16,22 +30,27 @@ header {
     font-family: 'Inter', sans-serif;
     color: green;
     background-color: white;
-    border-radius: 2rem;
+    border-radius: 1rem;
     padding: 1rem 2rem;
     text-align: center;
-    margin-bottom: 1.5rem;
+    margin: auto;
+    width: 50%;
+    
 }
 
 h1 {
     font-size: 2.5rem;
 }
 
+h2 {
+
+}
 
 
 .dark-mode header {
     font-family: 'Inter', sans-serif;
     color: white;
-    background-color: black;
+    background-color: #01131f;
 }
 
 
@@ -39,23 +58,72 @@ h1 {
 /* toggle button --------------------------*/
 
 #toggle-mode {
-    font-family: 'Inter', sans-serif;
-    background-color: green;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:42px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 14px;
+	font-weight:bold;
+	padding:11px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+    margin-top: 2rem;
+}
+
+#toggle-mode:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+
+#toggle-mode:active {
+    position:relative;
+	top:1px;
 }
 
 .dark-mode #toggle-mode {
-    
+	box-shadow:inset 0px 1px 0px 0px #0084b8;
+	background:linear-gradient(to bottom, #0084b8 5%, #04283e 100%);
+	background-color:#0084b8;
+	border-radius:42px;
+	border:1px solid #0084b8;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:11px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
 }
+
+.dark-mode #toggle-mode:hover {
+	background:linear-gradient(to bottom, #04283e 5%, #0084b8 100%);
+	background-color:#04283e;
+}
+
+.dark-mode #toggle-mode:active {
+    position:relative;
+	top:1px;
+}
+
 
 /* articles div --------------------------*/
 #articles {
-
+    width: 75%;
+    margin: auto;
 }
 
 #articles ul {
     text-transform: capitalize;
     background-color: rgb(235, 230, 228);
     border: 2px solid blue;
+    color: ;
 }
 
 
@@ -67,14 +135,15 @@ h1 {
 
 .dark-mode #articles ul {
     border: 2px solid white;
-    background-color: black;
+    background-color: #01131f;
 }
 
 
 
 /* jobs board -------------------------------- */
 #jobs {
-
+    width: 50%;
+    margin: auto;
 }
 
 #jobs ul {
@@ -86,6 +155,7 @@ h1 {
 #jobs li {
     text-transform: capitalize;
     list-style-type: none;
+    color: #246F12
 }
 
 #jobs a {
@@ -104,11 +174,25 @@ h1 {
 
 /* view jobs button --------------------------*/
 #get-jobs {
-
+    box-shadow:inset 0px 0px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:10px 48px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #528009;
+    margin-bottom: 2rem;
 }
 
 #get-jobs:hover {
-
+    background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
 }
 
 .dark-mode #get-jobs {
@@ -130,7 +214,6 @@ form {
 }
 
 #post-job:hover {
-
 }
 
 .dark-mode #post-job {
