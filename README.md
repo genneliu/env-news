@@ -12,12 +12,12 @@ Learn More About the Developer: www.linkedin.com/in/genneliu/
  This is my final project for the DevMountain Foundations course. Special thanks to my instructors Stuart, DJ, and Adam. 
 
 #### Technology 
-⋅⋅* Javascript
-⋅⋅* HTML
-⋅⋅* CSS
-⋅⋅* Express
-⋅⋅* Axios
-⋅⋅* News API
+* Javascript
+* HTML
+* CSS
+* Express
+* Axios
+* News API
 
 #### Displayed News Articles
 ![Displayed Articles in Light Mode](lightarticles.png)
