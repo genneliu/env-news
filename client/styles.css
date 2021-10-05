@@ -60,6 +60,16 @@ h2 {
 
 
 /* toggle button --------------------------*/
+svg {
+    height: 1.7rem;
+    width: 1.5rem;
+}
+
+#sun {
+    height: 2rem;
+    width: 1.7rem;
+}
+
 
 #toggle-mode {
 	box-shadow:inset 0px 1px 0px 0px #a4e271;
@@ -192,23 +202,38 @@ h2 {
 #jobs {
     width: 50%;
     margin: auto;
-    background-color: #59A11F;
+
 }
 
 #jobs ul {
     text-transform: capitalize;
-    background-color: rgb(235, 230, 228);
-    border: 2px solid blue;
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    border: 1px solid #59A11F;
 }
 
 #jobs li {
-    text-transform: capitalize;
     list-style-type: none;
-    color: #246F12
+    color: #59A11F;
+    font-size: 0.9rem;
+    text-align: start;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 #jobs a {
-    border: 1px solid black;
+    font-size: 1rem;
+    color: #74705c;
+}
+
+#jobs a:hover {
+    font-size: 1rem;
+    color: #e7cf54;
 }
 
 
@@ -265,7 +290,7 @@ h2 {
 /* form and button --------------------------*/
 
 form {
-
+    padding: 2rem 2rem;
 }
 
 #post-job {

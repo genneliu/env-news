@@ -83,9 +83,9 @@ let jobsBoard = function() {
 
       // let applyButton = document.createElement("button");
       let applyLink = document.createElement("a")
-      let link = document.createTextNode("Click to Apply")
+      let link = document.createTextNode("Apply Now")
       applyLink.appendChild(link);
-      applyLink.title = "Click to Apply"
+      applyLink.title = "Apply Now";
       applyLink.setAttribute('href', jobData.URL)
       applyLink.setAttribute('target', "_blank")
       jobName.appendChild(applyLink);
@@ -109,16 +109,6 @@ let addJobPosting = function(body) {
   }
   axios.post("http://localhost:4400/api/addJob", bodyObj)
   .then((res) => {
-
-
-
-
-  //   createJob(bodyObj)
-
-  //   title.value = ''
-  //   field.value = ''
-  //   location.value = ''
-  //   URL.value = ''
   })
 };
 
