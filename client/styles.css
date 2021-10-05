@@ -177,6 +177,8 @@ svg {
 #articles a {
     font-size: 1rem;
     color: #74705c;
+    text-decoration: none;
+
 }
 
 #articles a:hover {

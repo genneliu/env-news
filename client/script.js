@@ -43,7 +43,7 @@ window.onload =function() {
 
         //add URL
         let articleUrlLink = document.createElement('a');
-        let link = document.createTextNode("Click To View Article")
+        let link = document.createTextNode("View Article →")
         articleUrlLink.appendChild(link)
         articleUrlLink.setAttribute('href', articleInfo.url)
         articleUrlLink.setAttribute('target', '_blank')
