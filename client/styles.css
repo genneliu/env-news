@@ -19,9 +19,8 @@ body {
     background-image: url("/assets/forest-day.jpg");
 }
 
-
 .dark-mode {
-    background-image: url("/assets/forest-night.jpeg");
+    background-image: url("/assets/dark-forest.jpeg");    
     /* height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,11 +45,10 @@ h1 {
     font-size: 2.5rem;
 }
 
-
 .dark-mode header {
     font-family: 'Inter', sans-serif;
     color: white;
-    background-color: #01131f;
+    background-color: #04283E;
 }
 
 
@@ -76,7 +74,7 @@ svg {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family: "Roboto", sans-serif;
 	font-size: 14px;
 	font-weight:bold;
 	padding:11px 10px;
@@ -104,7 +102,7 @@ svg {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:"Roboto", sans-serif;
 	font-size:14px;
 	font-weight:bold;
 	padding:11px 10px;
@@ -125,7 +123,7 @@ svg {
 
 /* articles div --------------------------*/
 #articles {
-    width: 75%;
+    width: 50%;
     margin: auto;
 }
 
@@ -163,24 +161,24 @@ svg {
 .dark-mode #articles ul {
     text-transform: capitalize;
     color: #c6efff;
-    background-color: #01131f;
+    background-color: #04283E;
     border-radius: 1rem;
     padding: 1rem 1rem;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
 }
 
 
 .dark-mode #articles li {
     list-style-type: none;
     color: whitesmoke;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: start;
     line-height: 1.8;
 }
 
 .dark-mode #articles a {
     font-size: 1rem;
-    color: #0fbbff;
+    color: #c4ecfc;
 }
 
 .dark-mode #articles a:hover {
@@ -239,7 +237,7 @@ svg {
 }
 
 .dark-mode .job-section { 
-    background-color: #04283E;
+    background-color: #01131f;
 }
 
 .dark-mode #jobs ul {
@@ -247,10 +245,11 @@ svg {
     border-radius: 1rem;
     background-color: #04283E;
     font-weight: bold;
-    padding: 1.5rem 2rem;
+    padding: 1rem 1rem;
     font-size: 1rem;
     border: 1px solid #9ee5ff;
     color: #9ee5ff;
+    line-height: 1.5rem;
 }
 
 .dark-mode #jobs li {
@@ -284,7 +283,7 @@ svg {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:"Roboto", sans-serif;
 	font-size:15px;
 	font-weight:bold;
 	padding:14px 68px;
@@ -312,7 +311,7 @@ svg {
 	display:inline-block;
 	cursor:pointer;
 	color:#ffffff;
-	font-family:Arial;
+	font-family:"Roboto", sans-serif;
 	font-size:15px;
 	font-weight:bold;
 	padding:14px 68px;
@@ -330,9 +329,11 @@ svg {
 	top:1px;
 }
 
-/* form and button --------------------------*/\
+/* form and button --------------------------*/
 h2 {
-    font-size: larger;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
     margin-top: 2rem;
 }
 
