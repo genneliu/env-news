@@ -6,7 +6,7 @@ window.onload =function() {
   let displayJobs = document.getElementById("get-jobs")
     axios.get("http://localhost:4400/api/articles")
     .then((res) => {
-      for (let i =0; i <= 9; i++) {
+      for (let i =0; i <= 4; i++) {
         let {source, author, title, description, url, publishedAt} = res.data[i];
         let articleInfo = {
           source: source.name,
@@ -28,12 +28,12 @@ window.onload =function() {
 
         // add author
         let articleAuthor = document.createElement("li");
-        articleAuthor.textContent = "Author: " + articleInfo.author;
+        articleAuthor.textContent = "By: " + articleInfo.author;
         articleTitle.appendChild(articleAuthor);
 
         //add date
         let articleDate = document.createElement("li");
-        articleDate.textContent = "Date: " + articleInfo.date;
+        articleDate.textContent = "Published at " + articleInfo.date;
         articleTitle.appendChild(articleDate);
 
         //add description
@@ -60,7 +60,7 @@ let jobsBoard = function() {
   let jobsDiv = document.getElementById("jobs")
   axios.get("http://localhost:4400/api/currentjobs")
   .then((res) => {
-    for (let i =0; i < res.data.length; i++) {
+    for (let i =0; i < 4; i++) {
       let {id, jobTitle, subfield, location, URL} = res.data[i];
         let jobData = {
           id: id,
