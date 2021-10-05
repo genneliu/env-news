@@ -38,10 +38,10 @@ At this moment, the jobs board is populated by a json file located at the backen
 
 #### Future Plans
 Some ideas going in to the future include:
-⋅⋅* Storing light/dark preference so returning visitors may land on their chosen mode
-⋅⋅* Adding an API to populate Climate Jobs
-⋅⋅* Adding an account system
-⋅⋅* Creating a database so the jobs users submit may be saved indefinitely
+* Storing light/dark preference so returning visitors may land on their chosen mode
+* Adding an API to populate Climate Jobs
+* Adding an account system
+* Creating a database so the jobs users submit may be saved indefinitely
 
 
 ###### Dependencies
