@@ -22,17 +22,18 @@ window.onload =function() {
 
         // add source
         let articleSource = document.createElement("li");
-        articleSource.textContent = "Source: " + articleInfo.source;
+        articleSource.textContent = "📰 " + articleInfo.source;
         articleTitle.appendChild(articleSource);
 
         // add author
         let articleAuthor = document.createElement("li");
-        articleAuthor.textContent = "By: " + articleInfo.author;
+        articleAuthor.textContent = "✏️ " + articleInfo.author;
         articleTitle.appendChild(articleAuthor);
 
         //add date
         let articleDate = document.createElement("li");
-        articleDate.textContent = "Published at " + articleInfo.date;
+        let date = new Date(articleInfo.date)
+        articleDate.textContent = "🕑 " + date.toDateString();
         articleTitle.appendChild(articleDate);
 
         //add description
@@ -73,16 +74,16 @@ let jobsBoard = function() {
       jobsDiv.appendChild(jobName);
 
       let jobCategory = document.createElement("li");
-      jobCategory.textContent = "Field/Category: " + jobData.category;
+      jobCategory.textContent = jobData.category;
       jobName.appendChild(jobCategory);
 
       let jobLocation = document.createElement("li");
-      jobLocation.textContent = "Location: " + jobData.location;
+      jobLocation.textContent = "📍 " + jobData.location;
       jobName.appendChild(jobLocation);
 
       // let applyButton = document.createElement("button");
       let applyLink = document.createElement("a")
-      let link = document.createTextNode("Apply Now")
+      let link = document.createTextNode("Apply Now →")
       applyLink.appendChild(link);
       applyLink.title = "Apply Now";
       applyLink.setAttribute('href', jobData.URL)
@@ -117,7 +118,7 @@ n =  new Date();
 y = n.getFullYear();
 m = n.getMonth() + 1;
 d = n.getDate();
-document.getElementById("date").innerHTML = "Today's Date is: " + m + "/" + d + "/" + y;
+document.getElementById("date").innerHTML = "Climate News Refreshed On " + m + "/" + d + "/" + y;
 
 
 //dark mode

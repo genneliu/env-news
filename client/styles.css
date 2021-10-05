@@ -36,7 +36,6 @@ body {
 header {
     font-family: 'Inter', sans-serif;
     color: green;
-    background-color: whitesmoke;
     border-radius: 1rem;
     padding: 1rem 2rem;
     text-align: center;
@@ -48,12 +47,33 @@ header {
 h1 {
     font-size: 3rem;
     font-family: 'Sen', sans-serif;
+    line-height: 0.95;
+    background-color: #e8ffd7 ;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
 }
 
-.dark-mode header {
-    font-family: 'Inter', sans-serif;
-    color: white;
-    background-color: #04283E;
+.dark-mode h1 {
+    font-size: 3rem;
+    line-height: 0.95;
+    background-color: #134b6d;
+    color: whitesmoke;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+h3 {
+    width: 50%;
+    margin: auto;
+    color: whitesmoke;
+    font-weight: 200;
+    font-style: italic;
+    font-size: medium;
+    text-align: left;
+}
+
+.dark-mode h3 {
+
 }
 
 
@@ -85,7 +105,7 @@ svg {
 	padding:11px 10px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #246F12;
-    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 #toggle-mode:hover {
@@ -235,6 +255,8 @@ svg {
 }
 
 #jobs a {
+
+    text-decoration: none;
     font-size: 1rem;
     color: #74705c;
 }
@@ -351,12 +373,12 @@ h2 {
     color: whitesmoke;
 }
 form {
-    padding: 2rem 2rem;
+    padding: 3.5rem 3.5rem;
     background-color: #407e0d;
 }
 
 input {
-    border-radius: 1.5rem;
+    border-radius: 1rem;
     padding: 0.8rem 0.5rem;
     margin-right: 1rem;
 }
