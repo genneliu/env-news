@@ -1,17 +1,14 @@
 const { default: axios } = require("axios");
 
 globalId = 9;
-// export default NewsApiWrapper ({
-//     newsApiKey: process.env.NEWS_API_KEY;
-// })(newsContainer)
 
-//api key hidden for small safety measure
+//api key stored in env var
 const newsAPIKey = process.env.NEWS_API_KEY;
 
 //require db.json
 let jobs = require('./db.json');
 
-//const for safety
+//const for search query
 const query = "climate";
 
 module.exports = {
@@ -19,12 +16,9 @@ module.exports = {
         axios.get(`https://newsapi.org/v2/everything?q=${query}&apiKey=${newsAPIKey}`)
         .then(function (res) {
             let articles = res.data.articles
-            //want to see what response looks like
-            // console.log(articles)
             //send response back
             response.status(200).send(articles);
             //have frontend create loop and sort data to view
-
             //need error code 
             if (res == null || res == 'undefined') {
                 res.sendStatus(404);
