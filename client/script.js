@@ -3,7 +3,6 @@
 window.onload =function() {
   let articleDiv = document.getElementById("articles");
   let postJobButton = document.getElementById("post-job")
-  let displayJobs = document.getElementById("get-jobs")
     axios.get("http://localhost:4400/api/articles")
     .then((res) => {
       for (let i =0; i <= 4; i++) {
@@ -51,7 +50,7 @@ window.onload =function() {
     };
   })
   //invoke jobsBoard on load
-  displayJobs.addEventListener("click", jobsBoard);
+  jobsBoard()
   postJobButton.addEventListener("click", addJobPosting)
 };
 
@@ -60,7 +59,7 @@ let jobsBoard = function() {
   let jobsDiv = document.getElementById("jobs")
   axios.get("http://localhost:4400/api/currentjobs")
   .then((res) => {
-    for (let i =0; i < 4; i++) {
+    for (let i =0; i < res.data.length; i++) {
       let {id, jobTitle, subfield, location, URL} = res.data[i];
         let jobData = {
           id: id,

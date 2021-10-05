@@ -46,10 +46,6 @@ h1 {
     font-size: 2.5rem;
 }
 
-h2 {
-
-}
-
 
 .dark-mode header {
     font-family: 'Inter', sans-serif;
@@ -139,14 +135,14 @@ svg {
     border-radius: 1rem;
     font-weight: bold;
     padding: 1.5rem 2rem;
-    font-size: 1.35rem;
+    font-size: 1.2rem;
 }
 
 
 #articles li {
     list-style-type: none;
     color: #59A11F;
-    font-size: 1rem;
+    font-size: 0.9rem;
     text-align: start;
     line-height: 1.8;
     font-weight: normal;
@@ -196,13 +192,18 @@ svg {
 
 /* jobs board -------------------------------- */
 .job-section { 
+    padding-top: 2rem;
     background-color: whitesmoke;
+    
 }
 
 #jobs {
-    width: 50%;
+    width: 75%;
     margin: auto;
-
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
 }
 
 #jobs ul {
@@ -213,6 +214,7 @@ svg {
     padding: 1.5rem 2rem;
     font-size: 1rem;
     border: 1px solid #59A11F;
+    
 }
 
 #jobs li {
@@ -236,14 +238,40 @@ svg {
     color: #e7cf54;
 }
 
+.dark-mode .job-section { 
+    background-color: #04283E;
+}
 
 .dark-mode #jobs ul {
-    border: 2px solid white;
-    background-color: black;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    background-color: #04283E;
+    font-weight: bold;
+    padding: 1.5rem 2rem;
+    font-size: 1rem;
+    border: 1px solid #9ee5ff;
+    color: #9ee5ff;
+}
+
+.dark-mode #jobs li {
+    list-style-type: none;
+    color: whitesmoke;
+    font-size: 0.9rem;
+    text-align: start;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .dark-mode #jobs a {
-    border: 1px solid white;
+    font-size: 1rem;
+    color: #d1dce7;
+}
+
+.dark-mode #jobs a:hover {
+    font-size: 1rem;
+    color: #606C7A;
 }
 
 /* view jobs button --------------------------*/
@@ -276,19 +304,41 @@ svg {
 }
 
 .dark-mode #get-jobs {
-    
+	box-shadow:inset 0px 1px 0px 0px #0084b8;
+	background:linear-gradient(to bottom, #9ee5ff 5%, #0084b8 100%);
+	background-color:#9ee5ff;
+	border-radius:42px;
+	border:1px solid #0084b8;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:14px 68px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
 }
 
 .dark-mode #get-jobs:hover {
-    
+	background:linear-gradient(to bottom, #0084b8 5%, #9ee5ff 100%);
+	background-color:#0084b8;
 }
 
 .dark-mode #get-jobs:active {
-    
+    position:relative;
+	top:1px;
 }
 
-/* form and button --------------------------*/
+/* form and button --------------------------*/\
+h2 {
+    font-size: larger;
+    margin-top: 2rem;
+}
 
+.dark-mode h2 {
+    color: whitesmoke;
+}
 form {
     padding: 2rem 2rem;
 }
