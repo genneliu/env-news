@@ -34,6 +34,7 @@ At this moment, the jobs board is populated by a json file located at the backen
 
 #### Light/Dark Toggle
 ![Displayed Articles in Dark Mode](darkarticles.png)
+
 ![Displayed jobs in Dark Mode](darkjobs.png)
 
 #### Future Plans
