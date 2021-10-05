@@ -16,15 +16,19 @@ body {
     color: #246F12;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-image: url("/assets/forest-day.jpg");
+    background-image: url("/assets/forest-day-blur.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .dark-mode {
-    background-image: url("/assets/dark-forest.jpeg");    
-    /* height: 100%;
-    background-position: center;
+    background-image: url("/assets/dark-forest-blur.jpg");    
+    height: 100%;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
   }
 
 /* headers -----------------------*/
@@ -125,6 +129,7 @@ svg {
 #articles {
     width: 50%;
     margin: auto;
+    padding-bottom: 2rem;
 }
 
 #articles ul {
