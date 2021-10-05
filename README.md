@@ -12,10 +12,10 @@ Learn More About the Developer: www.linkedin.com/in/genneliu/
  This is my final project for the DevMountain Foundations course. Special thanks to my instructors Stuart, DJ, and Adam. 
 
 #### Technology 
-* Javascript
-* HTML
-* CSS
-* Express
+* Vanilla Javascript
+* HTML / CSS
+* Express as Server
+* Node.js as backend
 * Axios
 * News API
 
@@ -43,12 +43,13 @@ Some ideas going in to the future include:
 * Adding an account system
 * Creating a database so the jobs users submit may be saved indefinitely
 
+If you would like to chat or discuss this project, please reach out on Linkedin 
 
 ###### Dependencies
-axios: ^0.21.4,
-cors: ^2.8.5,
-dotenv: ^10.0.0,
-express: ^4.17.1,
-path: ^0.12.7,
-postinstall": ^0.7.3,
-route: ^0.2.5
+axios: 0.21.4
+cors: 2.8.5
+dotenv: 10.0.0
+express: 4.17.1
+path: 0.12.7
+postinstall: 0.7.3
+route: 0.2.
