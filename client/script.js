@@ -3,7 +3,7 @@
 window.onload =function() {
   let articleDiv = document.getElementById("articles");
   let postJobButton = document.getElementById("post-job")
-    axios.get("http://localhost:4400/api/articles")
+    axios.get("https://env-news-api.herokuapp.com/api/articles")
     .then((res) => {
       for (let i =0; i <= 4; i++) {
         let {source, author, title, description, url, publishedAt} = res.data[i];
@@ -58,7 +58,7 @@ window.onload =function() {
 // load simple job board
 let jobsBoard = function() {
   let jobsDiv = document.getElementById("jobs")
-  axios.get("http://localhost:4400/api/currentjobs")
+  axios.get("https://env-news-api.herokuapp.com/api/currentjobs")
   .then((res) => {
     for (let i =0; i < res.data.length; i++) {
       let {id, jobTitle, subfield, location, URL} = res.data[i];
@@ -107,7 +107,7 @@ let addJobPosting = function(body) {
     location: location,
     URL: URL
   }
-  axios.post("http://localhost:4400/api/addJob", bodyObj)
+  axios.post("https://env-news-api.herokuapp.com/api/addJob", bodyObj)
   .then((res) => {
   })
 };

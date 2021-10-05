@@ -58,13 +58,3 @@ module.exports = {
 
 // https://newsapi.org/docs/endpoints/everything
 
-// module.exports = {
-//     getHouses: (req, res) => {
-//         res.status(200).send(houses);
-//     },
-//     deleteHouse: (req, res) => {
-//         const {id} = req.params
-//         let index = houses.findIndex(elem => elem.id === +id)
-//         houses.splice(index, 1)
-//         res.status(200).send(houses)
-//     },
