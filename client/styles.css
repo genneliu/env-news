@@ -16,7 +16,7 @@ body {
     color: #246F12;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    background-image: url("/assets/forest-day-blur.jpg");
+    background-image: url("/assets/forest-day.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,9 +24,9 @@ body {
 }
 
 .dark-mode {
-    background-image: url("/assets/dark-forest-blur.jpg");    
+    background-image: url("/assets/dark-forest.jpg");    
     height: 100%;
-    background-position: bottom;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
   }
